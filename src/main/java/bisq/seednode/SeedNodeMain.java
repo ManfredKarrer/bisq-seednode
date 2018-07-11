@@ -19,8 +19,8 @@ package bisq.seednode;
 
 import bisq.core.app.BisqEnvironment;
 import bisq.core.app.BisqExecutable;
-import bisq.core.app.ExecutableForAppWithP2p;
-import bisq.core.app.ModuleForAppWithP2p;
+import bisq.core.app.misc.ExecutableForAppWithP2p;
+import bisq.core.app.misc.ModuleForAppWithP2p;
 
 import bisq.common.UserThread;
 import bisq.common.app.AppModule;
@@ -33,7 +33,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class SeedNodeMain extends ExecutableForAppWithP2p {
-    private static final String VERSION = "0.7.0";
+    private static final String VERSION = "0.7.1";
     private SeedNode seedNode;
 
     public static void main(String[] args) throws Exception {
